@@ -30,3 +30,7 @@ nmap <Leader>n :NERDTreeFind<CR>
 nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
 nmap <Leader>wq :wq<CR>
+
+"Tmux Navigator
+nmap <Leader><Left> :TmuxNavigateLeft<CR>
+nmap <Leader><Right> :TmuxNavigateRight<CR>
