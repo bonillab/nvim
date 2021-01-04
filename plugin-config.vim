@@ -1,15 +1,26 @@
 colorscheme gruvbox
-let mapleader=" "
 let NERDTreeQuitOnOpen=1
 let NERDTreeMapActivateNode='<space>'
+let g:javascript_plugin_flow = 1
 
 "kite
 let g:kite_supported_languages = ["javascript", "python"]
 
 " coc
 autocmd FileType python let b:coc_suggest_disable = 1
-autocmd FileType javascript let b:coc_suggest_disable = 1
+"autocmd FileType javascript let b:coc_suggest_disable = 1
 autocmd FileType scss setl iskeyword+=@-@
+
+" use <tab> for trigger completion and navigate to next complete item
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
+
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
 
 " Git
 let g:diffget_local_map = 'gl'
@@ -28,6 +39,11 @@ command! -bang -nargs=? -complete=dir Files
 
 " fugitive always vertical diffing
 set diffopt+=vertical
+
+"let g:UltiSnipsSnippetDirectories=[$HOME.'/config/.nvim/UltiSnips']
+"let g:UltiSnipsExpandTrigger="<tab>"
+"let g:UltiSnipsJumpForwardTrigger="<tab>"
+"let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
 
 " Lightlane
 let g:lightline = {

@@ -9,8 +9,8 @@ nmap <Leader>q :q<CR>
 nmap <Leader>wq :wq<CR>
 
 "Tmux Navigator
-nmap <Leader>h :TmuxNavigateLeft<CR>
-nmap <Leader>l :TmuxNavigateRight<CR>
+nmap <Leader>s :TmuxNavigateLeft<CR>
+nmap <Leader>d :TmuxNavigateRight<CR>
 
 " Remap keys for gotos
 nmap <silent> gd <Plug>(coc-definition)
