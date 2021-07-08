@@ -7,6 +7,10 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'preservim/nerdcommenter'
 
+" search
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
 " git
 Plug 'tpope/vim-fugitive'
 Plug 'christoomey/vim-conflicted'
