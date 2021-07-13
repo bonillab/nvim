@@ -18,4 +18,10 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 ## Installing plugins
 run `:PlugInstall` to install the plugins.
 
-### Dependencies for [fzf vim](https://github.com/junegunn/fzf.vim#dependencies)
+## Dependencies
+
+### [fzf vim](https://github.com/junegunn/fzf.vim#dependencies)
+
+ ### Install [coc-tsserver](https://github.com/neoclide/coc-tsserver#install)
+
+run `:CocInstall coc-tsserver`## Dependencies for [fzf vim](https://github.com/junegunn/fzf.vim#dependencies)
