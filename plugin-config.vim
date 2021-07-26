@@ -1,13 +1,19 @@
-colorscheme gruvbox
+"colorscheme gruvbox
+" Enabled Tokyo Theme
+set termguicolors
+
+let g:tokyonight_style = 'night' " available: night, storm
+let g:tokyonight_enable_italic = 0
+colorscheme tokyonight 
+
 let NERDTreeQuitOnOpen=1
 let NERDTreeMapActivateNode='<space>'
-let g:javascript_plugin_flow = 1
 
 "kite
 "let g:kite_supported_languages =  ["javascript"]
 
 " coc
-"autocmd FileType python let b:coc_suggest_disable = 1
+autocmd FileType python let b:coc_suggest_disable = 1
 "autocmd FileType javascript let b:coc_suggest_disable = 1
 autocmd FileType scss setl iskeyword+=@-@
 
@@ -40,6 +46,7 @@ command! -bang -nargs=? -complete=dir Files
 " fugitive always vertical diffing
 set diffopt+=vertical
 
+
 "let g:UltiSnipsSnippetDirectories=[$HOME.'/config/.nvim/UltiSnips']
 "let g:UltiSnipsExpandTrigger="<tab>"
 "let g:UltiSnipsJumpForwardTrigger="<tab>"
@@ -63,12 +70,14 @@ let g:lightline = {
       \   'gitbranch': 'fugitive#head',
       \   'kitestatus': 'kite#statusline'
       \ },
-      \ 'colorscheme': 'gruvbox',
+      \ 'colorscheme': 'tokyonight',
       \ 'subseparator': {
       \   'left': '',
       \   'right': ''
       \ }
       \}
+
+let g:airline_theme = "tokyonight"
 
 " Use <c-space> to trigger completion.
 "if &filetype == 'javascript' || &filetype == 'python'
