@@ -79,6 +79,9 @@ let g:lightline = {
 
 let g:airline_theme = "tokyonight"
 
+"prettier
+let g:prettier#autoformat = 1
+
 " Use <c-space> to trigger completion.
 "if &filetype == 'javascript' || &filetype == 'python'
   "inoremap <c-space> <C-x><C-u>
