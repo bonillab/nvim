@@ -21,3 +21,6 @@ nmap <silent> gr <Plug>(coc-references)
 nmap <silent> gss :call CocAction('jumpDefinition', 'split')<CR>
 nmap <silent> gs :call CocAction('jumpDefinition', 'vsplit')<CR>
 nmap <silent> gt :call CocAction('jumpDefinition', 'tabe')<CR>
+
+"Prettier
+nmap <Leader>p <Plug>(Prettier)

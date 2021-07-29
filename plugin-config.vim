@@ -81,6 +81,9 @@ let g:airline_theme = "tokyonight"
 
 "prettier
 let g:prettier#autoformat = 1
+" use tabs instead of spaces: true, false, or auto (use the expandtab setting).
+" default: 'auto'
+let g:prettier#config#use_tabs = 1
 
 " Use <c-space> to trigger completion.
 "if &filetype == 'javascript' || &filetype == 'python'
