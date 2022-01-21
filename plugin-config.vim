@@ -85,6 +85,8 @@ let g:prettier#autoformat = 1
 " default: 'auto'
 let g:prettier#config#use_tabs = 1
 
+lua require'colorizer'.setup()
+
 " Use <c-space> to trigger completion.
 "if &filetype == 'javascript' || &filetype == 'python'
   "inoremap <c-space> <C-x><C-u>

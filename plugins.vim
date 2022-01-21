@@ -8,6 +8,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 Plug 'preservim/nerdcommenter'
 Plug 'chemzqm/vim-jsx-improve'
+Plug 'norcalli/nvim-colorizer.lua'
 
 " search
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
