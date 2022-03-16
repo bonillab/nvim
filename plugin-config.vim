@@ -49,6 +49,9 @@ command! -bang -nargs=? -complete=dir Files
 " fugitive always vertical diffing
 set diffopt+=vertical
 
+" automatically use the system clipboard for copy and paste.
+set clipboard=unnamedplus
+
 
 "let g:UltiSnipsSnippetDirectories=[$HOME.'/config/.nvim/UltiSnips']
 "let g:UltiSnipsExpandTrigger="<tab>"
