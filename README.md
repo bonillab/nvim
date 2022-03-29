@@ -20,12 +20,12 @@ run `:PlugInstall` to install the plugins.
 
 ## Dependencies
 
+  ### Install npm dependencies
+
+run `npm install ~/.config/nvim/plugged/vim-prettier`
+
 ### [fzf vim](https://github.com/junegunn/fzf.vim#dependencies)
 
  ### Install [coc-tsserver](https://github.com/neoclide/coc-tsserver#install)
 
 run `:CocInstall coc-tsserver` Dependencies for [fzf vim](https://github.com/junegunn/fzf.vim#dependencies)
-
-  ### Install npm dependencies
-
-run `npm install ~/.config/nvim/plugged/vim-prettier`
