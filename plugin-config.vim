@@ -10,7 +10,7 @@ let NERDTreeQuitOnOpen=1
 let NERDTreeMapActivateNode='<space>'
 
 " Add your own custom formats or override the defaults
-let g:NERDCustomDelimiters = { 'javascript': { 'left': '{/*','right': '*/}' } }
+"let g:NERDCustomDelimiters = { 'javascript': { 'left': '{/*','right': '*/}' } }
 
 "kite
 "let g:kite_supported_languages =  ["javascript"]
