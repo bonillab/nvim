@@ -10,7 +10,8 @@ let NERDTreeQuitOnOpen=1
 let NERDTreeMapActivateNode='<space>'
 
 " Add your own custom formats or override the defaults
-"let g:NERDCustomDelimiters = { 'javascript': { 'left': '{/*','right': '*/}' } }
+let g:NERDCustomDelimiters = { 'javascript': { 'left': '{/*','right': '*/}' } }
+let g:NERDCustomDelimiters = { 'dart': { 'left': '//' } }
 
 "kite
 "let g:kite_supported_languages =  ["javascript"]
@@ -92,6 +93,10 @@ let g:prettier#autoformat = 1
 let g:prettier#config#use_tabs = 1
 
 lua require'colorizer'.setup()
+
+"Dart Format
+let g:dart_format_on_save = 1
+let g:lsc_auto_map = v:true
 
 " Use <c-space> to trigger completion.
 "if &filetype == 'javascript' || &filetype == 'python'
